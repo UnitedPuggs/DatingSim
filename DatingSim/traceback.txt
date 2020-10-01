@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 24, in script
+    define mc = Character(playerName, color="#FF0000")
+  File "game/script.rpy", line 24, in <module>
+    define mc = Character(playerName, color="#FF0000")
+NameError: name 'playerName' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 24, in script
+    define mc = Character(playerName, color="#FF0000")
+  File "C:\Users\Eddie\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 2108, in execute
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\Eddie\Desktop\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 24, in <module>
+    define mc = Character(playerName, color="#FF0000")
+NameError: name 'playerName' is not defined
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+DatingSim 1.0
+Wed Sep 30 20:20:34 2020
